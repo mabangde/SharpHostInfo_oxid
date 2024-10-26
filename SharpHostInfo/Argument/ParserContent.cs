@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace SharpHostInfo.Argument
 {
@@ -19,7 +19,7 @@ namespace SharpHostInfo.Argument
             }
             if (string.IsNullOrEmpty(Service))
             {
-                Service = "nbns,smb,wmi";
+                Service = "nbns,smb,wmi,oxid";
             }
             Target = ArgumentParser(arguments, "-i");
             if (string.IsNullOrEmpty(Target))
@@ -37,7 +37,7 @@ namespace SharpHostInfo.Argument
             }
             if (string.IsNullOrEmpty(Thread))
             {
-                Thread = "100";
+                Thread = "50";
             }
             Timeout = ArgumentParser(arguments, "-m");
             if (string.IsNullOrEmpty(Timeout))
@@ -46,7 +46,7 @@ namespace SharpHostInfo.Argument
             }
             if (string.IsNullOrEmpty(Timeout))
             {
-                Timeout = "500";
+                Timeout = "100";
             }
             /*Port = ArgumentParser(arguments, "--port");*/
 
