@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace SharpHostInfo.Helpers
 {
@@ -29,7 +29,7 @@ ARGUMENTS:
    --target,  -i   The IP address of the target Required)
    --thread,  -t   Number of detection threads(Default: 100)
    --timeout, -m   Detection timeout millisecond(Default: 500)
-   --service, -s   Specify which services to use to detect(Default: nbns,smb,wmi)
+   --service, -s   Specify which services to use to detect(Default: nbns,smb,wmi,oxid)
 
 EXAMPLES:
    SharpHostInfo.exe --target=192.168.1.1
